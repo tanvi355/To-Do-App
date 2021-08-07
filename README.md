@@ -1,6 +1,6 @@
 # To-Do List
 
-This is a simple To-Do List app made using HTML, Python, Flask for backend, Semantic UI for styling and Flask-SQLAlchemy.
+This is a simple To-Do List app made using HTML, Python, Flask for backend, Semantic UI for styling and SQLite database.
 
 ## How to use:
 
