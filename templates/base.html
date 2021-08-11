@@ -4,57 +4,53 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" contwelvet="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>To-Do List app</title>
-
         <!-- Scripts for Semantic UI-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
         <!--Icons-->
-	    <script src="https://kit.fontawesome.com/7e8697690d.js" crossorigin="anonymous"></script>
-
+        <script src="https://kit.fontawesome.com/7e8697690d.js" crossorigin="anonymous"></script>
     </head>
-
     <body class="ui container" style="background-color:#D3D3D3	;">
-            <div class="ui container"  style="margin-top: 25px;">
-                <h1 class="ui center aligned header"><u>To-Do List App</u></h1>
-                <hr>
-                <br>
-                <form class ="ui form" action="/add", method="post">
-                    <div class="field">
-                        <h2><label for="title">Task</label></h2>
-                        <textarea rows="2" name="Title" placeholder="What do we have to do today..." style="border-color:black";></textarea>
-                        <br><br>
-                        <center><button class="large ui purple button" type="submit">Add Note</button></center>
-                    </div>
-                </form>
-                <h2 class="ui header">Your To-Do List</h2>
-                {% for todo in todo_list %}
-
-                <div class="ui raised segments">
-                    <div class="ui padded segment">
-                        <p class="ui big header">{{ todo.id }}) {{ todo.title }}</p>
-                    </div>
-                    <div class="ui padded secondary segment" style="background-color:#E6E6FA;">
-                        <label for="status">Status</label>
-                        &nbsp;&nbsp;&nbsp;
-                        {% if todo.complete == False %}
-                            <span class="ui gray label">Not Complete</span>
-                        {% else %}
-                            <span class="ui yellow label">Completed</span>
-                        {% endif %}
-
-                        <a class="ui green button mobile tablet computer" href="/update/{{ todo.id }}" style="margin-left:600px";>Update</a>
-                        <a class="ui red button" href="/delete/{{ todo.id }}">Delete</a>
-                    </div>
-
+        <div class="ui container"  style="margin-top: 25px;">
+            <h1 class="ui center aligned header"><u>To-Do List App</u></h1>
+            <hr>
+            <br>
+            <form class ="ui form" action="/add", method="post">
+                <div class="field">
+                    <h2><label for="title">Task</label></h2>
+                    <textarea rows="2" name="Title" placeholder="What do we have to do today..." style="border-color:black";></textarea>
+                    <br><br>
+                    <center><button class="large ui purple button" type="submit">Add Note</button></center>
                 </div>
-                {% endfor %}
-
-                <div class="ui container">
+            </form>
+            <h2 class="ui header">Your To-Do List</h2>
+            {% for todo in todo_list %}
+            <div class="ui raised segments">
+                <div class="ui padded segment">
+                    <p class="ui big header">{{ todo.id }}) {{ todo.title }}</p>
+                </div>
+                <div class="ui padded secondary segment" style="background-color:#E6E6FA;">
+                    <label for="status">Status</label>
                     &nbsp;&nbsp;&nbsp;
+                    {% if todo.complete == False %}
+                    <span class="ui gray label">Not Complete</span>
+                    {% else %}
+                    <span class="ui yellow label">Completed</span>
+                    {% endif %}
+                    <a class="ui green button mobile tablet computer" href="/update/{{ todo.id }}" style="margin-left:600px";>Update</a>
+                    <a class="ui red button" href="/delete/{{ todo.id }}">Delete</a>
                 </div>
             </div>
+            {% endfor %}
+    
+            <div class="ui container center aligned" style="margin-top: 175px;">
+                <hr>
+                <h3 class="ui center aligned header">Made by Tanvi</h3>
+                <a target="_blank" href="https://github.com/tanvi355"><i class="fab fa-github fa-2x" style="color:black"></i></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://www.linkedin.com/in/tanvi-bugdani/"><i class="fab fa-linkedin fa-2x" style="color:blue"></i></a>
+            </div>
+        </div>
     </body>
 </html>
