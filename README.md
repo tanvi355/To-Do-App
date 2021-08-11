@@ -1,8 +1,13 @@
 # To-Do List
 
 This is a simple To-Do List app made using HTML, Python, Flask for backend, Semantic UI for styling and SQLite database.
+It has the options to add a new note, update its status from `Not Complete` to `Complete` and delete a note.
 
-## How to use:
+## Project Link
+
+Try out this project here: https://to-do-list-app-flask.herokuapp.com/
+
+## Steps to use it on your local machine:
 
 1. Fork and clone repository.
 2. In your command prompt, navigate to **To-Do App**.
@@ -13,13 +18,12 @@ This is a simple To-Do List app made using HTML, Python, Flask for backend, Sema
 - Using a database.
 - Using Semantic UI for styling.
 
-## Working Video:
+## Screenshot:
+
+<img src="https://imgur.com/lqjpJGL.png" />
 
 
-https://user-images.githubusercontent.com/56465105/128203760-08d258b9-a7dd-4eaf-9905-b527789eff5f.mp4
-
-
-## Possible enhancements
+## Possible enhancements:
 - Better UI
 - More options for taking notes
 - Login system
