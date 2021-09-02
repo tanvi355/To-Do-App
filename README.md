@@ -12,7 +12,7 @@ Try out this project here: https://to-do-list-app-flask.herokuapp.com/
 1. Fork and clone repository.
 2. In your command prompt, navigate to **To-Do App**.
 3. Run this app using the command `python app.py`.
-4. Now, navigate to `http://127.0.0.1:5000/` in your web browser to use the calculator.
+4. Now, navigate to `http://127.0.0.1:5000/` in your web browser to use the app.
 
 ## Learnings:
 - Using a database.
